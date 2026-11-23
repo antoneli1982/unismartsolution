@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     images: ["/assets/uni-social-share.png"],
   },
   icons: {
-    icon: `${process.env.PAGES_BASE_PATH || ""}/favicon.svg`,
-    shortcut: `${process.env.PAGES_BASE_PATH || ""}/favicon.svg`,
+    icon: `${process.env.PAGES_BASE_PATH || ""}/uni-aba.png`,
+    shortcut: `${process.env.PAGES_BASE_PATH || ""}/uni-aba.png`,
   },
 };
 
