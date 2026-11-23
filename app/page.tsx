@@ -87,10 +87,13 @@ export default function Home() {
             ['ferramenta-transbordo','Controle de transbordo','Orientações visuais, tempos e informações do processo disponíveis para a execução.','Tela de controle de transbordo com peças, embalagens e tempos operacionais']
           ].map(([file,title,description,alt],i)=><article className="tool-card" key={file}><a className="tool-image" href={`./assets/${file}.png`} target="_blank" rel="noreferrer" aria-label={`Ampliar imagem: ${title}`}><img src={`./assets/${file}.png`} alt={alt} loading="lazy" decoding="async"/><span>Ampliar imagem ↗</span></a><div className="tool-caption"><small>0{i+1} / APLICAÇÃO</small><h3>{title}</h3><p>{description}</p></div></article>)}
           {[
-            ['Simulador de embalagens vazias', 'https://antoneli1982.github.io/SIMULADOR.EMBALAGENS.VAZIAS/'],
-            ['Simulador de estoque', 'https://antoneli1982.github.io/SIMULADOR.ESTOQUE/']
-          ].map(([title, url]) => (
-            <article className="tool-card" key={url}>
+            ['Simulador de embalagens vazias', 'https://antoneli1982.github.io/SIMULADOR.EMBALAGENS.VAZIAS/', 'simulador-embalagens.jpg', 'Rebocador com carretinhas e operadores na área de descarga de embalagens vazias'],
+            ['Simulador de estoque', 'https://antoneli1982.github.io/SIMULADOR.ESTOQUE/', 'simulador-estoque.jpg', 'Vista do armazém em 3D durante o tour guiado pelos corredores de estoque']
+          ].map(([title, url, image, description]) => (
+            <article className="tool-card" key={url} id={image.split(".")[0]} style={{scrollMarginTop: "7rem"}}>
+              <a className="tool-image" href={url} target="_blank" rel="noopener noreferrer" aria-label={`Abrir ${title.toLowerCase()} em nova aba`}>
+                <img src={`./assets/${image}`} alt={description} width={1536} height={695} style={{aspectRatio: "1536 / 695"}} loading="lazy" decoding="async" />
+              </a>
               <div className="tool-caption">
                 <h3>{title}</h3>
                 <a className="button" href={url} target="_blank" rel="noopener noreferrer" aria-label={`Abrir ${title.toLowerCase()} em nova aba`}>
