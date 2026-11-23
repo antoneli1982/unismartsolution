@@ -86,6 +86,19 @@ export default function Home() {
             ['ferramenta-competencias','Gestão de competências','Estruturação de setores, treinamentos e matrizes para apoiar o desenvolvimento das equipes.','Ferramenta de gestão de competências com setores e matrizes'],
             ['ferramenta-transbordo','Controle de transbordo','Orientações visuais, tempos e informações do processo disponíveis para a execução.','Tela de controle de transbordo com peças, embalagens e tempos operacionais']
           ].map(([file,title,description,alt],i)=><article className="tool-card" key={file}><a className="tool-image" href={`./assets/${file}.png`} target="_blank" rel="noreferrer" aria-label={`Ampliar imagem: ${title}`}><img src={`./assets/${file}.png`} alt={alt} loading="lazy" decoding="async"/><span>Ampliar imagem ↗</span></a><div className="tool-caption"><small>0{i+1} / APLICAÇÃO</small><h3>{title}</h3><p>{description}</p></div></article>)}
+          {[
+            ['Simulador de embalagens vazias', 'https://antoneli1982.github.io/SIMULADOR.EMBALAGENS.VAZIAS/'],
+            ['Simulador de estoque', 'https://antoneli1982.github.io/SIMULADOR.ESTOQUE/']
+          ].map(([title, url]) => (
+            <article className="tool-card" key={url}>
+              <div className="tool-caption">
+                <h3>{title}</h3>
+                <a className="button" href={url} target="_blank" rel="noopener noreferrer" aria-label={`Abrir ${title.toLowerCase()} em nova aba`}>
+                  Abrir simulador <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+          ))}
         </div>
         <div className="tools-bottom"><p><strong>Qual rotina está tomando o tempo da sua equipe?</strong><br/>Vamos transformá-la na próxima oportunidade de melhoria.</p><a className="button" href="https://wa.me/5516997375936?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20uma%20ferramenta%20customizada%20para%20minha%20opera%C3%A7%C3%A3o." target="_blank" rel="noreferrer">Quero uma solução sob medida <span>↗</span></a></div>
       </section>
