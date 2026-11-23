@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://unismartsolution.com.br"),
   title: "UNI | Engenharia de Processos, MTM e BPMN",
   description:
-    "Engenharia de processos para opera��es industriais e log�sticas. MTM, BPMN, estudo de tempos, redesenho de fluxos e padroniza��o do trabalho.",
+    "Engenharia de processos para operações industriais e logísticas. MTM, BPMN, estudo de tempos, redesenho de fluxos e padronização do trabalho.",
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "UNI Smart Outsourcing Solutions",
     title: "Processos mais inteligentes. Resultados que aparecem.",
     description:
-      "Engenharia de processos aplicada � produtividade, padroniza��o e melhoria cont�nua.",
+      "Engenharia de processos aplicada à produtividade, padronização e melhoria contínua.",
     images: [
       {
         url: "/assets/uni-social-share.png",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Processos mais inteligentes. Resultados que aparecem.",
     description:
-      "Engenharia de processos aplicada � produtividade, padroniza��o e melhoria cont�nua.",
+      "Engenharia de processos aplicada à produtividade, padronização e melhoria contínua.",
     images: ["/assets/uni-social-share.png"],
   },
   icons: {
