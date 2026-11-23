@@ -747,7 +747,14 @@ footer p, footer span { color: #cecbd0; }
 }
 
 /* Identidade visual UNI */
-.hero { background: linear-gradient(120deg, #e8eaec, #c1c5ca); }
 .topbar { border-bottom: 2px solid var(--red); }
-.custom-tools { background: linear-gradient(145deg, #dce0e3, #bdc2c8); }
 .topbar nav a, footer a { color: #e0e2e5; }
+
+:root { --silver: #c0c0c0; }
+body, main > section, .hero, .section, .cta { background: var(--silver); }
+.city, .sim, .about, .cta, .sim label { color: var(--ink); }
+.city h2 em, .sim h2 em, .about h2 em, .cta h2 em { color: #920e1d; }
+.city p:not(.eyebrow), .sim p:not(.eyebrow), .about p:not(.eyebrow), .cta p:not(.eyebrow) { color: #33363a; }
+.city-intro > a, .city-intro > a:hover { color: #801421; }
+.city-grid article, .numbers-panel { color: #f7f8f9; }
+.city-grid article p:not(.eyebrow), .numbers-panel p:not(.eyebrow) { color: #d9dce0; }
