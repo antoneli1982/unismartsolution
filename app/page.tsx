@@ -64,23 +64,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="expedicao" aria-labelledby="expedicao-titulo" style={{scrollMarginTop: "6rem"}}>
-        <div className="section-head">
-          <div>
-            <p className="eyebrow"><span/> Simulador 3D</p>
-            <h2 id="expedicao-titulo">Expedição de <em>embalagens vazias.</em></h2>
-          </div>
-          <a className="button" href="https://antoneli1982.github.io/exp.embalagens.vazias/" target="_blank" rel="noopener noreferrer">Abrir em nova aba <span aria-hidden="true">↗</span></a>
-        </div>
-        <iframe
-          title="Simulador 3D de expedição de embalagens vazias"
-          src="https://antoneli1982.github.io/exp.embalagens.vazias/"
-          loading="lazy"
-          allowFullScreen
-          style={{display: "block", width: "100%", height: "clamp(360px, 72vh, 840px)", border: 0, borderRadius: "1rem", background: "#17191c"}}
-        />
-      </section>
-
       <section className="solutions section" id="solucoes"><div className="section-head"><div><p className="eyebrow"><span/> SOLUÇÕES MODULARES</p><h2>Onde há desperdício,<br/><em>encontramos oportunidade.</em></h2></div></div><div className="solution-grid">
         {[['Manufatura','Padronização, tempos MTM, automação e indicadores para uma operação previsível.','01','factory'],['Logística interna','Fluxos, estoques e movimentação de materiais com menor custo e maior controle.','02','logistics'],['Treinamentos','Capacitação personalizada com Quick Analysis para medir a eficácia do aprendizado.','03','training'],['Gestão de pessoas','Papéis claros, análise de desempenho e desenvolvimento contínuo das equipes.','04','people']].map(x=><article key={x[0]}><b>{x[2]}</b><div className="cube"><ProcessIcon type={x[3] as 'factory'|'logistics'|'training'|'people'}/></div><h3>{x[0]}</h3><p>{x[1]}</p><a href={whatsapp} target="_blank" rel="noreferrer">Explorar solução →</a></article>)}
       </div></section>
@@ -97,6 +80,22 @@ export default function Home() {
         </div>
         <div className="tools-benefits"><span>Automação de rotinas</span><span>Informações mais confiáveis</span><span>Visibilidade da operação</span><span>Gestão sob medida</span></div>
         <div className="tools-gallery">
+          <article className="tool-card" id="expedicao" aria-labelledby="expedicao-titulo" style={{scrollMarginTop: "6rem", gridColumn: "1 / -1"}}>
+        <div className="section-head tool-caption" style={{marginBottom: 0}}>
+          <div>
+            <p className="eyebrow"><span/> Simulador 3D</p>
+            <h3 id="expedicao-titulo" style={{fontSize: "clamp(1.5rem, 3vw, 2.6rem)"}}>Expedição de <em>embalagens vazias.</em></h3>
+          </div>
+          <a className="button" href="https://antoneli1982.github.io/exp.embalagens.vazias/" target="_blank" rel="noopener noreferrer">Abrir em nova aba <span aria-hidden="true">↗</span></a>
+        </div>
+        <iframe
+          title="Simulador 3D de expedição de embalagens vazias"
+          src="https://antoneli1982.github.io/exp.embalagens.vazias/"
+          loading="lazy"
+          allowFullScreen
+          style={{display: "block", width: "100%", height: "clamp(360px, 72vh, 840px)", border: 0, borderRadius: "1rem", background: "#17191c"}}
+        />
+      </article>
           {[
             ['ferramenta-mtm','Métodos e tempos','Organização de projetos, análises e folhas de processo em um único ambiente.','Tela de ferramenta MTM com projetos e folhas de processo'],
             ['ferramenta-indicadores','Indicadores operacionais','Painéis que transformam registros da operação em uma visão clara para a gestão.','Painel com indicadores por turno, paradas e embalagens lavadas'],
