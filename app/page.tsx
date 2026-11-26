@@ -80,6 +80,13 @@ export default function Home() {
         </div>
         <div className="tools-benefits"><span>Automação de rotinas</span><span>Informações mais confiáveis</span><span>Visibilidade da operação</span><span>Gestão sob medida</span></div>
         <div className="tools-gallery">
+          
+          {[
+            ['ferramenta-mtm','Métodos e tempos','Organização de projetos, análises e folhas de processo em um único ambiente.','Tela de ferramenta MTM com projetos e folhas de processo'],
+            ['ferramenta-indicadores','Indicadores operacionais','Painéis que transformam registros da operação em uma visão clara para a gestão.','Painel com indicadores por turno, paradas e embalagens lavadas'],
+            ['ferramenta-competencias','Gestão de competências','Estruturação de setores, treinamentos e matrizes para apoiar o desenvolvimento das equipes.','Ferramenta de gestão de competências com setores e matrizes'],
+            ['ferramenta-transbordo','Controle de transbordo','Orientações visuais, tempos e informações do processo disponíveis para a execução.','Tela de controle de transbordo com peças, embalagens e tempos operacionais']
+          ].map(([file,title,description,alt],i)=><article className="tool-card" key={file}><a className="tool-image" href={`./assets/${file}.png`} target="_blank" rel="noreferrer" aria-label={`Ampliar imagem: ${title}`}><img src={`./assets/${file}.png`} alt={alt} loading="lazy" decoding="async"/><span>Ampliar imagem ↗</span></a><div className="tool-caption"><small>0{i+1} / APLICAÇÃO</small><h3>{title}</h3><p>{description}</p></div></article>)}
           <article className="tool-card" id="expedicao" aria-labelledby="expedicao-titulo" style={{scrollMarginTop: "6rem", gridColumn: "1 / -1"}}>
         <div className="section-head tool-caption" style={{marginBottom: 0}}>
           <div>
@@ -96,12 +103,6 @@ export default function Home() {
           style={{display: "block", width: "100%", height: "clamp(360px, 72vh, 840px)", border: 0, borderRadius: "1rem", background: "#17191c"}}
         />
       </article>
-          {[
-            ['ferramenta-mtm','Métodos e tempos','Organização de projetos, análises e folhas de processo em um único ambiente.','Tela de ferramenta MTM com projetos e folhas de processo'],
-            ['ferramenta-indicadores','Indicadores operacionais','Painéis que transformam registros da operação em uma visão clara para a gestão.','Painel com indicadores por turno, paradas e embalagens lavadas'],
-            ['ferramenta-competencias','Gestão de competências','Estruturação de setores, treinamentos e matrizes para apoiar o desenvolvimento das equipes.','Ferramenta de gestão de competências com setores e matrizes'],
-            ['ferramenta-transbordo','Controle de transbordo','Orientações visuais, tempos e informações do processo disponíveis para a execução.','Tela de controle de transbordo com peças, embalagens e tempos operacionais']
-          ].map(([file,title,description,alt],i)=><article className="tool-card" key={file}><a className="tool-image" href={`./assets/${file}.png`} target="_blank" rel="noreferrer" aria-label={`Ampliar imagem: ${title}`}><img src={`./assets/${file}.png`} alt={alt} loading="lazy" decoding="async"/><span>Ampliar imagem ↗</span></a><div className="tool-caption"><small>0{i+1} / APLICAÇÃO</small><h3>{title}</h3><p>{description}</p></div></article>)}
           {[
             ['Simulador de embalagens vazias', './simuladores/embalagens/', 'simulador-embalagens.jpg', 'Rebocador com carretinhas e operadores na área de descarga de embalagens vazias'],
             ['Simulador de estoque', './simuladores/estoque/', 'simulador-estoque.jpg', 'Vista do armazém em 3D durante o tour guiado pelos corredores de estoque']
