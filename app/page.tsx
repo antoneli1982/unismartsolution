@@ -53,7 +53,7 @@ export default function Home() {
           <p className="eyebrow"><span/> Engenharia de processos aplicada</p>
           <h1>Engenharia que transforma processos em <em>resultados.</em></h1>
           <p className="lead">Conectamos pessoas, métodos e dados para reduzir desperdícios e desenvolver operações mais produtivas. Do estudo de tempos ao redesenho de processos, com acompanhamento da implementação.</p>
-          <div className="actions"><a className="button" href={whatsapp} target="_blank" rel="noreferrer">Solicitar diagnóstico <span>→</span></a><a className="text-link" href="#metodologias">Conheça nossa abordagem <i>↓</i></a></div>
+          <div className="actions"><a className="button" href={whatsapp} target="_blank" rel="noreferrer">Solicitar diagnóstico <span>→</span></a><a className="text-link" href="#expedicao">Ver simulador de expedição <i>↓</i></a></div>
           <div className="trust"><b>AS-IS → TO-BE</b><span>MTM</span><span>LEAN SIX SIGMA</span><span>VSM + BPMN</span></div>
         </div>
         <div className="engineering-panel" aria-label="Abordagem de engenharia da UNI">
@@ -62,6 +62,23 @@ export default function Home() {
           <h2>Clareza para decidir.<br/><em>Método para evoluir.</em></h2>
           <div className="panel-bottom"><div><b>MTM</b><span>Métodos e tempos</span></div><div><b>BPMN</b><span>Fluxos e decisões</span></div><div><b>LEAN</b><span>Valor e melhoria</span></div></div>
         </div>
+      </section>
+
+      <section className="section" id="expedicao" aria-labelledby="expedicao-titulo" style={{scrollMarginTop: "6rem"}}>
+        <div className="section-head">
+          <div>
+            <p className="eyebrow"><span/> Simulador 3D</p>
+            <h2 id="expedicao-titulo">Expedição de <em>embalagens vazias.</em></h2>
+          </div>
+          <a className="button" href="https://antoneli1982.github.io/exp.embalagens.vazias/" target="_blank" rel="noopener noreferrer">Abrir em nova aba <span aria-hidden="true">↗</span></a>
+        </div>
+        <iframe
+          title="Simulador 3D de expedição de embalagens vazias"
+          src="https://antoneli1982.github.io/exp.embalagens.vazias/"
+          loading="lazy"
+          allowFullScreen
+          style={{display: "block", width: "100%", height: "clamp(360px, 72vh, 840px)", border: 0, borderRadius: "1rem", background: "#17191c"}}
+        />
       </section>
 
       <section className="solutions section" id="solucoes"><div className="section-head"><div><p className="eyebrow"><span/> SOLUÇÕES MODULARES</p><h2>Onde há desperdício,<br/><em>encontramos oportunidade.</em></h2></div></div><div className="solution-grid">
